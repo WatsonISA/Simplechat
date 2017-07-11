@@ -31,14 +31,14 @@ Once deployed, the app can be viewed by clicking 'View app'.
   * Creates the application.
   * Creates a Conversation and Retrieve & Rank service instance.
 
-5. It is required to configure the Conversation and R-n-R service that is created. We can follow the next steps
+5. It is required to configure the Conversation and Tone Analyzer service that is created. We can follow the next steps
 
 6. Configure Watson Conversation
 
 Launch the **Watson Conversation** tool. Use the **import** icon button on the right
 
 <p align="center">
-  <img width="400" height="55" src="readme_images/import_conversation_workspace.PNG">
+  <img width="400" height="55" src="readme_images/import_conversation_workspace.png">
 </p>
 
 Find the local version of [`data/Banking workspace.json`](data/Banking workspace.json) and select
@@ -93,7 +93,7 @@ Create the following services:
 Launch the **Watson Conversation** tool. Use the **import** icon button on the right
 
 <p align="center">
-  <img width="400" height="55" src="readme_images/import_conversation_workspace.PNG">
+  <img width="400" height="55" src="readme_images/import_conversation_workspace.png">
 </p>
 
 Find the local version of [`data/Banking workspace.json`](data/Banking workspace.json) and select
