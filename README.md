@@ -1,4 +1,4 @@
-![Bluemix Deployments](https://deployment-tracker.mybluemix.net/stats/49d75098a98a520d8944bbb1d3560dc5/badge.svg)
+
 # Implementing a chat bot using Watson Cognitive Services
 
 Welcome! These instructions describe the pre-requisites to be completed before attending the lab session. Please follow these steps to ensure that you are fully prepared to participate on the day of the lab.
@@ -13,7 +13,7 @@ Welcome! These instructions describe the pre-requisites to be completed before a
 
 NOTE: Perform steps 1-6 OR click the Deploy to Bluemix button to do it all at once!
 
-[![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/49d75098a98a520d8944bbb1d3560dc5/button.svg)](https://bluemix.net/deploy?repository=https://github.com/WatsonISA/chatbot-lab)
+[![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/49d75098a98a520d8944bbb1d3560dc5/button.svg)](https://bluemix.net/deploy?repository=https://github.com/WatsonISA/Simplechat)
 
 1. Log in to your Bluemix account before deploying.
 If already logged in, then ignore this step.
@@ -41,7 +41,7 @@ Launch the **Watson Conversation** tool. Use the **import** icon button on the r
   <img width="400" height="55" src="readme_images/import_conversation_workspace.PNG">
 </p>
 
-Find the local version of [`data/WCS/Securities.json`](data/WCS/Securities.json) and select
+Find the local version of [`data/Banking workspace.json`](data/Banking workspace.json) and select
 **Import**. Find the **Workspace ID** by clicking on the context menu of the new
 workspace and select **View details**.
 ##### Save this ID for later.
@@ -55,27 +55,11 @@ workspace and select **View details**.
 
 ![](readme_images/dialog.PNG)
 
-7. Configure Watson Retrieve and Rank
-
-Launch the **Watson retrieve-and-rank** tool. Create a **new data cluster**.
-
-![](readme_images/rnr-cluster.PNG)
-
-###### Save this CLUSTER_ID for later.
-
-Seed the content by firstly creating **New Collection**, and add the file documents and questions present under [`data/Retrieve&Rank/`](data/Retrieve&Rank/)
-
-###### Save this COLLECTION_NAME for later.
-
-![](readme_images/new-collection.PNG)
-
-> Note: Ensure that you have also created a [**Watson Document Conversion**](https://console.ng.bluemix.net/catalog/services/document-conversion) service as well. Since, Watson RnR uses document conversion at the backend.
-
-8. Once the watson services are configured, Go to View App -> Runtime -> Environment Variables -> User Defined, add the IDs saved above and save it.
+7. Once the watson services are configured, Go to View App -> Runtime -> Environment Variables -> User Defined, add the IDs saved above and save it.
 
  ![](readme_images/runtime-settings.png)
 
-9. The application and services have been successfully deployed, and you are now ready to use the application.
+8. The application and services have been successfully deployed, and you are now ready to use the application.
 
 
 # Steps
@@ -83,24 +67,23 @@ Seed the content by firstly creating **New Collection**, and add the file docume
 1. [Clone the repo](#1-clone-the-repo)
 2. [Create Watson services on IBM Bluemix](#2-create-watson-services-on-ibm-bluemix)
 3. [Configure Watson Conversation](#3-configure-watson-conversation)
-4. [Configure Watson Retrieve and Rank](#4-configure-watson-retrieve-and-rank)
-5. [Run the application](#5-run-the-application)
+4. [Run the application](#4-run-the-application)
 
 ## 1. Clone the repo
 
-Clone the `chatbot-lab` locally. In a terminal, run:
+Clone the `Simplechat` locally. In a terminal, run:
 
-`$ git clone https://github.com/WatsonISA/chatbot-lab`
+`$ git clone https://github.com/WatsonISA/Simplechat`
 
-We’ll be using the file [`data/WCS/Securities.json`](data/WCS/Securities.json) and the folder
-[`data/WCS/`](data/WCS/)
+We’ll be using the file [`data/Banking workspace.json`](data/Banking workspace.json) and the folder
+[`data/`](data/)
 
 ## 2. Create Watson services on IBM Bluemix
 
 Create the following services:
 
 * [**Watson Conversation**](https://console.ng.bluemix.net/catalog/services/conversation)
-* [**Watson Retrieve n Rank**](https://console.ng.bluemix.net/catalog/services/retrieve-and-rank)
+* [**Watson Tone Analyzer**](https://console.ng.bluemix.net/catalog/services/tone-analyzer)
 
 
 > Note: Ensure that you have logged into Bluemix and are allowed to use these services.
@@ -113,7 +96,7 @@ Launch the **Watson Conversation** tool. Use the **import** icon button on the r
   <img width="400" height="55" src="readme_images/import_conversation_workspace.PNG">
 </p>
 
-Find the local version of [`data/WCS/Securities.json`](data/WCS/Securities.json) and select
+Find the local version of [`data/Banking workspace.json`](data/Banking workspace.json) and select
 **Import**. Find the **Workspace ID** by clicking on the context menu of the new
 workspace and select **View details**. Save this ID for later.
 
@@ -126,19 +109,7 @@ workspace and select **View details**. Save this ID for later.
 
 ![](readme_images/dialog.PNG)
 
-## 4. Configure Watson Retrieve and Rank
-
-Launch the **Watson retrieve-and-rank** tool. Create a **new data cluster**.
-
-![](readme_images/rnr-cluster.PNG)
-
-Seed the content by firstly creating **New Collection**, and add the file documents and questions present under [`data/Retrieve&Rank/`](data/Retrieve&Rank/)
-
-![](readme_images/new-collection.PNG)
-
-> Note: Ensure that you have also created a [**Watson Document Conversion**](https://console.ng.bluemix.net/catalog/services/document-conversion) service as well. Since, Watson RnR uses document conversion at the backend.
-
-## 5. Run the application
+## 4. Run the application
 
 ### If you used the Deploy to Bluemix button...
 
