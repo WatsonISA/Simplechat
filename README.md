@@ -41,8 +41,7 @@ Launch the **Watson Conversation** tool. Use the **import** icon button on the r
   <img width="400" height="55" src="readme_images/import_conversation_workspace.png">
 </p>
 
-Find the local version of [`data/Banking workspace.json`](data/Banking workspace.json) and select
-**Import**. Find the **Workspace ID** by clicking on the context menu of the new
+Find the local version of [`data/Banking workspace.json`](data/Banking workspace.json) or [`data/Retail workspace.json`](data/Retail workspace.json) and select **Import**. Find the **Workspace ID** by clicking on the context menu of the new
 workspace and select **View details**.
 ##### Save this ID for later.
 
@@ -75,8 +74,7 @@ Clone the `Simplechat` locally. In a terminal, run:
 
 `$ git clone https://github.com/WatsonISA/Simplechat`
 
-We’ll be using the file [`data/Banking workspace.json`](data/Banking workspace.json) and the folder
-[`data/`](data/)
+We can use the files [`data/Banking workspace.json`](data/Banking workspace.json) or [`data/Retail workspace.json`](data/Retail workspace.json) in the folder [`data/`](data/)
 
 ## 2. Create Watson services on IBM Bluemix
 
@@ -96,8 +94,9 @@ Launch the **Watson Conversation** tool. Use the **import** icon button on the r
   <img width="400" height="55" src="readme_images/import_conversation_workspace.png">
 </p>
 
-Find the local version of [`data/Banking workspace.json`](data/Banking workspace.json) and select
-**Import**. Find the **Workspace ID** by clicking on the context menu of the new
+Find the local version of [`data/Banking workspace.json`](data/Banking workspace.json) or 
+and [`data/Retail workspace.json`](data/Retail workspace.json) 
+select **Import**. Find the **Workspace ID** by clicking on the context menu of the new
 workspace and select **View details**. Save this ID for later.
 
 <p align="center">
@@ -145,10 +144,7 @@ Full license text is available in [LICENSE](LICENSE).
 
 # Links
 
-* [Lab Document](http://ibm.biz/Bdru7G): Detailed guide on how to deploy this app
-* [CONTRIBUTING](CONTRIBUTING.md): Guide to contribute to this project
-* [MAINTAINING](MAINTAINERS.md): Rules for maintainer of this project
-* [Open Source @ IBM](http://ibm.github.io/): Find more open source projects on the
+* [Open Source @ IBM](http://ibm.github.io/): Find more open source projects on the IBM bluemix github
 
 # Privacy Notice
 
